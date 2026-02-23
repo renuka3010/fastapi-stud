@@ -8,7 +8,7 @@ app = FastAPI()
 
 class Student(BaseModel):
     name: str = Field(..., example="Renuka")
-    age: int = Field(..., gt=0, example=23)
+    age: int = Field(..., example=23)
     course: str = Field(..., example="Computer Science")
 
 
