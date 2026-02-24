@@ -36,7 +36,7 @@ def get_student(student_id: str):
     return StudentResponse(id=student_id, **student.dict())
 
 
-@app.delete("/students/{student_id}", status_code=204)
+@app.delete("/students/{student_id}")
 def delete_student(student_id: str):
     del students_db[student_id]
     return
